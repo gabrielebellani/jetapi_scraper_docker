@@ -1,0 +1,10 @@
+services:
+  jetapi:
+    build: .
+    container_name: jetapi
+    ports:
+      - "8922:8922"
+    environment:
+      - PORT=8922
+      - HOST=0.0.0.0
+    restart: unless-stopped
